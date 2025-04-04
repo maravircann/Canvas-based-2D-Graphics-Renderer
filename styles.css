@@ -1,0 +1,81 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ebc5c5;
+    padding-top: 70px; 
+    
+}
+#canvas-container {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid rgb(197, 116, 130);
+    background-color: #ffffff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 800px;
+    padding: 0; 
+    overflow: hidden; 
+} 
+
+canvas {
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+} 
+
+#controls {
+    flex: 1;
+    box-sizing: border-box;
+    border-right: 1px solid #ffffff;
+    overflow-y: auto;
+    
+}
+
+#controls label, 
+#controls h2, 
+#controls h3 {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(201, 39, 106);
+    gap: 20px;
+}
+
+#controls button {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(201, 39, 106);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+#shapesList {
+    flex: 1;
+    overflow-y: auto;
+    gap: 20px; 
+}
+
+#controls, 
+#canvas-container, 
+#shapesList {
+    margin-bottom: 20px; 
+}
+
+
